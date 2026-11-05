@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convite</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efe6d8;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: #5b4a3a;
+    padding: 24px;
+  }
+
+  .convite {
+    width: 100%;
+    max-width: 480px;
+    background: #fffdf8;
+    border: 1px solid #c9a96a;
+    padding: 14px;
+    box-shadow: 0 10px 40px rgba(91, 74, 58, 0.18);
+  }
+
+  .moldura {
+    border: 1px solid #c9a96a;
+    padding: 56px 32px;
+    text-align: center;
+  }
+
+  .ornamento {
+    font-size: 1.4rem;
+    color: #c9a96a;
+    letter-spacing: 0.5rem;
+  }
+
+  .pre {
+    margin: 28px 0 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+  }
+
+  .frase {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    line-height: 1.3;
+    color: #8a6d3b;
+    margin: 12px 0 28px;
+  }
+
+  .linha {
+    width: 80px;
+    height: 1px;
+    background: #c9a96a;
+    margin: 0 auto 24px;
+  }
+
+  .rsvp {
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+  }
+
+  .ornamento.fim { margin-top: 8px; }
+
+  @media (max-width: 400px) {
+    .moldura { padding: 40px 20px; }
+    .frase { font-size: 2.3rem; }
+  }
+</style>
+</head>
+<body>
+  <main class="convite">
+    <div class="moldura">
+      <div class="ornamento">❦</div>
+      <p class="pre">Você está convidado</p>
+      <h1 class="frase">vamos ao burguer king hoje?</h1>
+      <div class="linha"></div>
+      <p class="rsvp">Confirme sua presença</p>
+      <div class="ornamento fim">❦</div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+services:
+  n8n:
+    image: n8nio/n8n
+    container_name: n8n_teste
+    ports:
+      - "8081:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n:ro
+
+  
+  site_convite:
+    image: minha-pagina-bk:latest
+    container_name: site_convite
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro
+
+volumes:
+  n8n_data:
